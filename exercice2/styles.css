@@ -1,0 +1,21 @@
+/* Feuille de style */
+/* * * * * * * * * * */
+
+body, html {
+    background-color: #deb887; /* Code hexdécimal : un fond beige */
+    color: #000; /* Code hexadécimal du noir */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cadreSerie {
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-sizing: border-box; /* Cette propriété permet de définir quels blocs HTML doivent être inclus dans le calcul de la hauteur et largeur de l'élément.  Utile pour éviter u'un élément ne dépasse de son parent à cause de bordures trop large ou de marges trop grandes etc. */
+    border:1px solid #FFF; /* Code hexadécimal du blanc */
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+}

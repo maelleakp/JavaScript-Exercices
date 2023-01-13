@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 1</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>Breaking Bad</h1>
+
+    <div class="cadreSerie">
+        <p id="info"></p>
+    </div>
+
+    <script>
+        let nombreSaisons = 4;
+        let nombreEpisodes = 12;
+
+        let dureeEpisode = 47;
+        let dureeGenerique = 4;
+
+        let dureeTotale= (dureeEpisode + dureeGenerique) * nombreEpisodes * nombreSaisons;
+
+        let paragraph = document.querySelector('#info');
+        paragraph.innerText = `${dureeTotale} minutes temps visionnage total de cette série.`
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 1</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>Breaking Bad</h1>
+
+    <div class="cadreSerie">
+        <p id="info"></p>
+    </div>
+
+    <script>
+        let titreEpisode = 'Mauvais choix';
+        let dureeEpisode = 45;
+        let dejaVu = false; // true
+
+        document.querySelector('#info').innerText = 
+        `Épisode : ${titreEpisode},
+        Durée : ${dureeEpisode} mn,
+        État : ${dejaVu ? 'Déjà vu !' : 'Pas encore vu !'}`
+    </script>
+    
+</body>
+</html>

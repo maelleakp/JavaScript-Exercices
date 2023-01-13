@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Variables en JavaScript</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <h1>Je code en JavaScript : les variables</h1>
+
+        <div class="cadreSerie">
+            <h2>Breaking Bad</h2>
+            <p id="info"></p>
+        </div>
+
+        <script>
+            // Mon code pour déclarer des variables
+            // let nombreSaisons = 5;
+            // let nombreEpisodes = 12;
+
+            // Instructions de sortie
+            // let paragraph = document.querySelector('#info');
+            // paragraph.innerText = `${nombreSaisons} saisons, ${nombreEpisodes} épisodes par saison`
+            // L'accent grave "‘" permet l'interprétation correcte de mon Template String, contrairement au simple quote '' qui l'affichera de manière littérale
+
+            ////////////////////////////////////////////////
+            // Pratique avec les opérateurs arithmétiques //
+            ////////////////////////////////////////////////
+            // Je peux aussi utiliser les opérations arithmétiques pour réaliser des opérations standards sur les variables
+            let nombreSaisons = 4;
+            let nombreEpisodes = 12;
+            let totalEpisodesSerie = nombreSaisons * nombreEpisodes; // 4 * 12 = 48
+            let nombreEpisodesParSaison = nombreEpisodes / nombreSaisons; // 12 / 4 = 3
+
+            // Instructions de sortie
+            // Attention à bien écrire les nouvelles variables 
+            let paragraph = document.querySelector('#info');
+            paragraph.innerText = `${totalEpisodesSerie} épisodes, ${nombreEpisodesParSaison} épisodes par saison`
+
+            // Ajouter ou soustraire un nombre à ma variable
+            let episodes = 12;
+            // J'ai déjà vu 5 épisodes sur 12, donc 
+            episodes -= 5; // Il me reste 7 épisodes à voir sur cette saison
+            // Je rajoute une saison de 12 épisodes en plus
+            episodes += 5; // Il y a bien 12 épisodes restants, soit 5+7
+
+            //Exemple avec incrémentation
+            let nombreEpisodesVus = 10;
+            nombreEpisodesVus++; // Cela fait 11
+            nombreEpisodesVus--; // Et on revient à 10
+
+            // De même, j'applique des opérateurs sur mes variables
+            /* let nombreEpisodesVus = 4;
+            nombreEpisodesVus *= 3; //nombreEpisodesVus vaut maintenant 4*3 = 12;
+            nombreEpisodesVus /= 2; // nombreEpisodesVus vaut maintenant 4/2 = 2; */
+            
+        </script>
+    </body>
+</html>
